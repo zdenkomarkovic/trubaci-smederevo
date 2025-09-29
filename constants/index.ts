@@ -30,6 +30,6 @@ export const navList = [
   },
   {
     title: "Kontakt",
-    link: "/kontakt",
+    link: "/#kontakt",
   },
 ];

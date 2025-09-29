@@ -6,18 +6,9 @@ import hero from "../public/6.webp";
 import { useEffect, useState } from "react";
 
 export default function Hero() {
-  const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    const checkScreenSize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-    
-    checkScreenSize();
-    window.addEventListener('resize', checkScreenSize);
-    
-    return () => window.removeEventListener('resize', checkScreenSize);
-  }, []);
+
+
 
   return (
     <section className="relative h-screen flex items-center justify-center bg-gradient-to-b from-slate-900 to-slate-800 text-white">
@@ -28,9 +19,7 @@ export default function Hero() {
             fill 
             className="object-cover"
             unoptimized
-            // style={{
-            //   objectPosition: isMobile ? '0% 20%' : '0% 15%'
-            // }}
+
           />
         </div>
       <div className="absolute inset-0 bg-black/40"></div>

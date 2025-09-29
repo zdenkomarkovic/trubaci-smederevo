@@ -26,67 +26,72 @@ import { HoverCard, HoverCardTrigger, HoverCardContent } from "./ui/hover-card";
 
 const mobTitleStyles = "text-lg py-2";
 
-const MobileMenu = () => (
-  <Sheet>
-    <SheetTrigger className="lg:hidden">
-      <MenuIcon className="text-primary cursor-pointer" />
-    </SheetTrigger>
-    <SheetContent>
-      <SheetHeader>
-        <SheetTitle></SheetTitle>
-        <SheetContent>
-          <ul>
-            {navList.map((item, index) => {
-              if (item.list)
-                return (
-                  <Fragment key={index}>
-                    <Accordion type="single" collapsible>
-                      <AccordionItem className="border-none" value="item-1">
-                        <motion.div
-                          whileHover={{ color: "hsl(var(--primary))" }}
-                        >
-                          <AccordionTrigger
-                            className={`${mobTitleStyles} hover:no-underline`}
+const MobileMenu = () => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <Sheet open={open} onOpenChange={setOpen}>
+      <SheetTrigger className="lg:hidden">
+        <MenuIcon className="text-primary cursor-pointer" />
+      </SheetTrigger>
+      <SheetContent>
+        <SheetHeader>
+          <SheetTitle></SheetTitle>
+          <SheetContent>
+            <ul>
+              {navList.map((item, index) => {
+                if (item.list)
+                  return (
+                    <Fragment key={index}>
+                      <Accordion type="single" collapsible>
+                        <AccordionItem className="border-none" value="item-1">
+                          <motion.div
+                            whileHover={{ color: "hsl(var(--primary))" }}
                           >
-                            {item.title}
-                          </AccordionTrigger>
-                        </motion.div>
-                        <AccordionContent>
-                          {item.list.map((link, index2) => (
-                            <Link
-                              className="pl-6 block font-light py-2"
-                              key={`${index}.${index2}`}
-                              href={link.link}
+                            <AccordionTrigger
+                              className={`${mobTitleStyles} hover:no-underline`}
                             >
-                              <motion.li
-                                whileHover={{ color: "hsl(var(--primary))" }}
+                              {item.title}
+                            </AccordionTrigger>
+                          </motion.div>
+                          <AccordionContent>
+                            {item.list.map((link, index2) => (
+                              <Link
+                                className="pl-6 block font-light py-2"
+                                key={`${index}.${index2}`}
+                                href={link.link}
+                                onClick={() => setOpen(false)}
                               >
-                                {link.title}
-                              </motion.li>
-                            </Link>
-                          ))}
-                        </AccordionContent>
-                      </AccordionItem>
-                    </Accordion>
-                  </Fragment>
+                                <motion.li
+                                  whileHover={{ color: "hsl(var(--primary))" }}
+                                >
+                                  {link.title}
+                                </motion.li>
+                              </Link>
+                            ))}
+                          </AccordionContent>
+                        </AccordionItem>
+                      </Accordion>
+                    </Fragment>
+                  );
+                return (
+                  <Link key={index} href={item.link} onClick={() => setOpen(false)}>
+                    <motion.li
+                      whileHover={{ color: "hsl(var(--primary))" }}
+                      className={mobTitleStyles}
+                    >
+                      {item.title}
+                    </motion.li>
+                  </Link>
                 );
-              return (
-                <Link key={index} href={item.link}>
-                  <motion.li
-                    whileHover={{ color: "hsl(var(--primary))" }}
-                    className={mobTitleStyles}
-                  >
-                    <SheetTrigger>{item.title}</SheetTrigger>
-                  </motion.li>
-                </Link>
-              );
-            })}
-          </ul>
-        </SheetContent>
-      </SheetHeader>
-    </SheetContent>
-  </Sheet>
-);
+              })}
+            </ul>
+          </SheetContent>
+        </SheetHeader>
+      </SheetContent>
+    </Sheet>
+  );
+};
 
 const DesktopNav = () => (
   <ul className="hidden gap-8 lg:flex  text-xl">
