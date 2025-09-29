@@ -7,12 +7,24 @@ export const navList = [
     title: "Usluge",
     list: [
       {
-        title: "Usluga 1",
-        link: "",
+        title: "Venčanja",
+        link: "/#vencanja",
       },
       {
-        title: "Usluga 2",
-        link: "",
+        title: "Krštenja",
+        link: "/#krstenja",
+      },
+      {
+        title: "Korporativni eventi",
+        link: "/#korporativni-eventi",
+      },
+      {
+        title: "Rođendani",
+        link: "/#rodendani",
+      },
+      {
+        title: "Slave",
+        link: "/#slave",
       },
     ],
   },

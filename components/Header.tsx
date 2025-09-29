@@ -154,31 +154,31 @@ export default function Header() {
     <header
       className={`flex justify-center ${
         scrolled
-          ? "bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-md"
-          : "bg-transparent"
+          ? "bg-background/95 text-gray-900 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-md"
+          : "bg-transparent text-white"
       }  fixed top-0 left-0 right-0 z-[10] transition-colors`}
     >
-      <nav className="flex items-center justify-between px-8 py-4 max-w-[80rem] w-full text-primary font-bold">
+      <nav className="flex items-center justify-between px-8  max-w-[80rem] w-full font-bold">
         <Link href="/" className="">
           <Image
             src={Logo}
             alt="dm rustic 24"
-            width={50}
-            height={50}
+            width={75}
+            height={75}
             className="rounded-full"
           />
         </Link>
         <DesktopNav />
-        <Link href="tel:+3816">
+        <Link href="tel:+381621120641">
           <motion.button
             whileHover={{
               color: "hsl(var(--foreground))",
               backgroundColor: "hsl(var(--primary))",
             }}
-            className=" items-center justify-center rounded-full text-primary border-primary border-2 text-sm md:text-lg py-1 px-2 md:py-2 md:px-4 transition-colors flex"
+            className=" items-center justify-center rounded-full text-white bg-primary  text-sm md:text-lg py-1 px-2 md:py-2 md:px-4 transition-colors flex items-center gap-2"
           >
             <PhoneIcon />
-            <p className="">+38160 000 000</p>
+            <p className="">062/11-20-641</p>
           </motion.button>
         </Link>
         <MobileMenu />
