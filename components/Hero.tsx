@@ -3,13 +3,8 @@ import { motion } from "framer-motion";
 import { Phone } from "lucide-react";
 import Image from "next/image";
 import hero from "../public/6.webp";
-import { useEffect, useState } from "react";
 
 export default function Hero() {
-
-
-
-
   return (
     <section className="relative h-screen flex items-center justify-center bg-gradient-to-b from-slate-900 to-slate-800 text-white">
         <div className="absolute inset-0">
