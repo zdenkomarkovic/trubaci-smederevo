@@ -16,11 +16,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Trubaci Složna Braća - Profesionalni trubači za sve vrste slavlja | Smederevo, Požarevac, Mladenovac",
-  description: "Trubaci Složna Braća - najbolji trubači u Smederevu, Požarevcu, Mladenovcu, Kovinu, Smederevskoj Palanci, Velikoj Plani, Lozoviku, Grockoj i Svilajncu. Sviraju na venčanjima, krštenjima, rođendanima, sahranama i svim važnim događajima. Kontakt: 062/11-20-641",
+  title:
+    "Trubaci Složna Braća - Profesionalni trubači za sve vrste slavlja | Smederevo, Požarevac, Mladenovac",
+  description:
+    "Trubaci Složna Braća - najbolji trubači u Smederevu, Požarevcu, Mladenovcu, Kovinu, Smederevskoj Palanci, Velikoj Plani, Lozoviku, Grockoj i Svilajncu. Sviraju na venčanjima, krštenjima, rođendanima, sahranama i svim važnim događajima. Kontakt: 062/11-20-641",
   keywords: [
     "trubaci smederevo",
-    "trubaci požarevac", 
+    "trubaci požarevac",
     "trubaci mladenovac",
     "trubaci kovin",
     "trubaci smederevska palanka",
@@ -37,7 +39,7 @@ export const metadata: Metadata = {
     "složna braća trubaci",
     "profesionalni trubači",
     "tradicionalni trubači",
-    "trubači za sve vrste slavlja"
+    "trubači za sve vrste slavlja",
   ],
   icons: {
     icon: [
@@ -49,11 +51,12 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   alternates: {
-    canonical: "https://trubaci-sloznabraca.com/",
+    canonical: "https://trubaci-sloznabracasmederevo.com/",
   },
   openGraph: {
     title: "Trubaci Složna Braća - Profesionalni trubači za sve vrste slavlja",
-    description: "Najbolji trubači u Smederevu i okolini. Sviraju na venčanjima, krštenjima, sahranama i svim važnim događajima.",
+    description:
+      "Najbolji trubači u Smederevu i okolini. Sviraju na venčanjima, krštenjima, sahranama i svim važnim događajima.",
     type: "website",
     locale: "sr_RS",
   },
