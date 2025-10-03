@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://trubaci-smederevo.rs", // Zameni svojim domenom
+  siteUrl: "https://trubaci-smederevo.rs",
   generateRobotsTxt: true,
   sitemapSize: 5000,
 };
