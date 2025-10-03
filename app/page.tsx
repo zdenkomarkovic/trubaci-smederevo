@@ -6,6 +6,7 @@ import Testimonials from "@/components/Testimonials";
 import Locations from "@/components/Locations";
 import WhyChoose from "@/components/WhyChoose";
 import ContactSection from "@/components/ContactSection";
+import VideoCard from "@/components/VideoCard";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <Services />
       <ContactSection />
+      <VideoCard />
       <WhyChoose />
       <Locations />
       <Statistics />
