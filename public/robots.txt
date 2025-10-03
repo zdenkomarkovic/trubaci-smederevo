@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://trubaci-smederevo.rs
+
+# Sitemaps
+Sitemap: https://trubaci-smederevo.rs/sitemap.xml
