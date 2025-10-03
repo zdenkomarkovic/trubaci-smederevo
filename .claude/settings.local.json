@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:trubaci-smederevo.rs)"
+      "WebFetch(domain:trubaci-smederevo.rs)",
+      "Bash(npm run build:*)"
     ],
     "deny": [],
     "ask": []
