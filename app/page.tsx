@@ -1,17 +1,17 @@
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Services from "@/components/Services";
-import Statistics from "@/components/Statistics";
-import Testimonials from "@/components/Testimonials";
-import Locations from "@/components/Locations";
-import WhyChoose from "@/components/WhyChoose";
-import ContactSection from "@/components/ContactSection";
-import VideoCard from "@/components/VideoCard";
+// import Hero from "@/components/Hero";
+// import About from "@/components/About";
+// import Services from "@/components/Services";
+// import Statistics from "@/components/Statistics";
+// import Testimonials from "@/components/Testimonials";
+// import Locations from "@/components/Locations";
+// import WhyChoose from "@/components/WhyChoose";
+// import ContactSection from "@/components/ContactSection";
+// import VideoCard from "@/components/VideoCard";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <Hero />
+      {/* <Hero />
       <About />
       <Services />
       <ContactSection />
@@ -19,7 +19,7 @@ export default function Home() {
       <WhyChoose />
       <Locations />
       <Statistics />
-      <Testimonials />
+      <Testimonials /> */}
     </div>
   );
 }
